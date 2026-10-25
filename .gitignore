@@ -1,3 +1,22 @@
+# Build output
+Debug/
+Release/
+build/
+cmake-build-*/
+
+# STM32CubeIDE / Eclipse local workspace settings
+.metadata/
+.recommenders/
+.settings/
+*.tmp
+*.bak
+*.swp
+*~
+
+# Debugger and probe artifacts
+*.launch
+*.svd
+
 # Prerequisites
 *.d
 
