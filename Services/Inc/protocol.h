@@ -12,14 +12,14 @@
 #include "stm32f1xx_hal.h"
 #include <stdbool.h>
 
-#define PROTOCOL_MAX_DATA 256U
+#define PROTOCOL_MAX_DATA 252U
 #define PROTOCOL_FLAG_RESPONSE  (1U << 0)
 #define PROTOCOL_FLAG_ERROR     (1U << 1)
 
 /* 						UART Protocol
  * 	---------------------------------------------------------
  *	|  SOF	|  LEN	| FLAGS	|  CMD	|  SEQ	| DATA	|  CRC	|
- * 	|  2B	|  1B	|  1B	|  1B	|  1B	|0-256B	|  2B	|
+ * 	|  2B	|  1B	|  1B	|  1B	|  1B	|0-252B	|  2B	|
  *	| A5 5A	|		|		|		|		|		|		|
  *	---------------------------------------------------------
  */
